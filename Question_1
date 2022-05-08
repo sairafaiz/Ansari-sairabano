@@ -1,0 +1,6 @@
+import java.util.*;
+class information{
+ public static void main(String[] args) {
+  System.out.println("Hello\nAnsari sairabano \nMObile NO-9309570839 \nStream-Computer Science");
+ }
+}
