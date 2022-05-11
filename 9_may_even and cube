@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class even{
+    public static void main(String arg[]){
+        int num,i;
+        Scanner sc=new Scanner(System.in);
+        i=sc.nextInt();
+        if(i%2==0){
+            System.out.println("this is even number:");
+            
+        }
+        else{
+            System.out.println("This is not a even number");
+        }
+        num=i*i*i;
+            System.out.println("cube:"+num);
+    }
+    
+}
