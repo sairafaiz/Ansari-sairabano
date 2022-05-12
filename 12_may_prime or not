@@ -8,10 +8,10 @@ public class prime {
         i=sc.nextInt();
 
         if(i%2==0){
-            System.out.println("This is not a prime number");
+            System.out.println("This is a prime number");
         }
         else{
-            System.out.println("this is a prime number ");
+            System.out.println("this is not a prime number ");
         }
     }
     
@@ -23,4 +23,4 @@ public class prime {
 output:
 Enter the number:
 5
-this is a prime number 
+this is not a prime number 
