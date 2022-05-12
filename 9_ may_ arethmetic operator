@@ -1,0 +1,55 @@
+import java.util.Scanner;
+public class arethmetic {
+    public static void main(String arg[]) {
+        Scanner sc=new Scanner(System.in);
+        int a,b;
+        char operator;
+        System.out.println("Enter A:");
+        a=sc.nextInt();
+        System.out.println("Enter B:");
+        b=sc.nextInt();
+        System.out.println("Enter operator(+,-,*,/)");
+        operator=sc.next().charAt(0);
+        double addition=a+b;
+        double substraction=a-b;
+        double multiplication=a*b;
+        double division=a/b;
+
+        switch(operator){
+            case '+':{
+                System.out.println("Total after addition is:"+addition);
+                break;
+            }
+            case '-':{
+                System.out.println("Total after substraction is:"+substraction);
+                break;
+            }
+            case '*':{
+                System.out.println("Total after multiplication is:"+multiplication);
+                break;
+            }
+            case '/':{
+                System.out.println("Total after divisionis:"+division);
+            }
+            default:{
+                System.out.println("Please select proper operator");
+                return;
+            }
+            
+        }
+        
+    }
+    
+}
+
+
+Output:
+Enter A:
+56
+Enter B:
+87
+Enter operator(+,-,*,/)
+*
+Total after multiplication is:4872.0
+
+
