@@ -1,0 +1,26 @@
+//swapping without third variable
+package demo;
+
+import java.util.Scanner;
+
+public class swap_number
+{
+public static void main(String arg[])
+{
+swapping_numbers();
+}
+public static void swapping_numbers()
+{
+int num1,num2;
+Scanner sc=new Scanner(System.in);
+num1=sc.nextInt();
+num2=sc.nextInt();
+
+num1=num1+num2;
+num2=num1-num2;
+num1=num1-num2;
+System.out.println("the value of num1="+num1+"the value of num2="+num2);
+
+}
+
+}
