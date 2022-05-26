@@ -1,0 +1,127 @@
+package hybrid_inheritence;
+
+import java.util.Scanner;
+
+public class Accept  
+{
+int size,i,a=0,b=1,c;
+    Scanner sc=new Scanner(System.in);
+     public int[] met_acc()
+     {
+    System.out.println("Enter the size");
+    size=sc.nextInt();
+    int[] arr=new int[size];
+    System.out.println("Enter"+size+"Numbers:");
+    for(i=0;i<size;i++)
+    {
+    arr[i]=sc.nextInt();
+    }
+     return arr;
+     }
+ 
+}
+
+
+-------------------------------------------------------------
+
+
+//the proceses of greater between three number
+package hybrid_inheritence;
+
+public class grt3 extends Accept
+{
+public void met_grt()
+{
+       int[] arr1=met_acc();
+       System.out.println("the numbers are");
+       for(i=0;i<size;i++)
+       {
+        System.out.println(arr1[i]);
+       
+       }
+       if(arr1[0]>arr1[1]&arr1[0]>arr1[2])
+        {
+           System.out.println("greater number is:"+arr1[0]);
+        }
+        else if(arr1[1]>arr1[0]&arr1[1]>arr1[2])
+        {
+        System.out.println("greater number is"+arr1[1]);
+        }
+        else
+        {
+        System.out.println("greater number is:"+arr1[2]);
+        }
+}
+public static void main(String arg[])
+{
+grt3 obj=new grt3();
+obj.met_grt();
+}
+
+}
+
+
+-------------------------------------------------------
+
+
+package hybrid_inheritence;
+
+public class avg extends grt3  
+{
+public void met_avg()
+{
+int[] integer=met_acc();
+int temp=0,avg;
+for(i=0;i<size;i++)
+{
+temp=temp+integer[i];
+}
+avg=temp/size;
+System.out.println("Average of the numbers are:"+avg);
+}
+public static void main(String agr[])
+{
+avg obj2=new avg();
+obj2.met_avg();
+
+}
+
+}
+
+
+-------------------------------------------------------
+
+
+//the proceses of showing fibonaci series
+package hybrid_inheritence;
+
+public class fibo extends Accept
+{
+public void met_fib()
+{
+        int[] arr=met_acc();
+        System.out.println(a);
+        System.out.println(b);
+        for(i=0;i<arr[0];i++)
+        {
+        c=a+b;
+        System.out.println(c);
+        a=b;
+        b=c;
+        }
+
+}
+public static void main(String agr[])
+{
+fibo obj1=new fibo();
+obj1.met_fib();
+}
+
+}
+
+
+
+
+
+
+
