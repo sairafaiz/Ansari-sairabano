@@ -1,0 +1,97 @@
+package thursdaylab;
+
+import java.util.Scanner;
+
+public class Constractor
+{
+public static void main(String arg[])
+{
+SOD obj=new SOD();
+obj.SOD();
+Grt2 obj1=new Grt2();
+obj1.Grt2();
+SI obj2=new SI();
+obj2.SI();
+}
+
+}
+-------------------------------------------------------------------------------------
+
+package thursdaylab;
+
+import java.util.Scanner;
+
+public class SOD
+{
+public static void SOD()
+{
+   System.out.println("Sum of digit");
+Scanner sc=new Scanner(System.in);
+int sum=0,m,n;
+   System.out.println("Enter the number");
+m=sc.nextInt();
+    while(m>0)
+    {
+    n=m%10;
+    sum=sum+n;
+    m=m/10;
+    }
+    System.out.println("sum of digits:"+sum);
+}
+}
+
+-------------------------------------------------------------------------------------
+
+package thursdaylab;
+
+import java.util.Scanner;
+
+public class Grt2
+{
+public static void Grt2()
+    {
+   System.out.println("Greater between two number");
+int a,b;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter first number:");
+    a=sc.nextInt();
+    System.out.println("Enter second number:");
+    b=sc.nextInt();
+    if(b<a)
+    {
+    System.out.println("the greater number is:"+a);
+    }
+    else
+    {
+    System.out.println("the greater number is:"+b);
+    }
+    }
+}
+----------------------------------------------------------------------------------
+
+package thursdaylab;
+
+import java.util.Scanner;
+
+public class SI
+{
+    public static void SI()
+    {
+        System.out.println("Simple interest");
+    float P=0 ;  //p is the principal amount
+    float R=0;  //R is the rate
+    float T=0;  //T is the time
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the amount");
+        P=sc.nextFloat();
+        System.out.println("Enter the rate of interest");
+        R=sc.nextFloat();
+        System.out.println("Enter the time");
+        T=sc.nextFloat();
+    float SI=(P*T*R)/100;
+    System.out.println("Simple interest:"+SI);
+   
+    }
+}
+
+
