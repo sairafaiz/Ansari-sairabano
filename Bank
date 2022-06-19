@@ -1,0 +1,79 @@
+package bank;
+
+import java.util.Scanner;
+
+public class Home
+{
+static int acc,acc_c,ifsc,amount1=0,pin;
+  static int c_n,ex,cvv,amount=0,otp,i;
+  static Scanner sc=new Scanner(System.in);
+    public static void main(String arg[])
+    {
+    do {
+    System.out.println("a:Deposit");
+    System.out.println("b:Bank transfer");
+    System.out.println("c:View balance");
+    String choice=sc.next();
+    switch(choice)
+    {
+    case "a":
+    deposit();        
+    break;
+    case "b":
+    transfer();
+    break;
+    case "c":
+    view();
+    break;
+    default:
+    System.out.println("invalid");
+    }
+    System.out.println("Enter 1 to continue:");
+   
+    i=sc.nextInt();
+    }
+    while(i==1) ;
+   
+    }
+   
+    public static void view()
+{
+int c,b=80000;
+   c=b+amount-amount1;
+   System.out.println("Balance:"+c);
+}
+   
+    public static void deposit()
+    {
+    String name;
+    System.out.println("Enter card details");
+    System.out.println("Enter Card Number:");
+    c_n=sc.nextInt();
+    System.out.println("Enter expiry");
+    ex=sc.nextInt();
+    System.out.println("Enter CVV");
+    cvv=sc.nextInt();
+    System.out.println("Name on Card");
+    name=sc.next();
+    System.out.println("Enter Amount");
+    amount=sc.nextInt();
+    System.out.println("Enter OTP");
+    otp=sc.nextInt();
+    System.out.println("succesesful");
+    }
+    public static void transfer()
+    {
+    System.out.println("Enter the account details ");
+  System.out.println("Enter account number:");
+  acc=sc.nextInt();
+  System.out.println("Confirm account number:");
+  acc_c=sc.nextInt();
+  System.out.println("Enter IFSC code:");
+  ifsc=sc.nextInt();
+  System.out.println("Enter Amount:");
+  amount1=sc.nextInt();
+  System.out.println("Enter your pin:");
+  pin=sc.nextInt();
+  System.out.println("Transaction completed");
+    }
+}
