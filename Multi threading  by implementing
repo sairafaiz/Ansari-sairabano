@@ -1,0 +1,37 @@
+
+package overriding;
+
+public class A implements Runnable
+{
+     public void run()
+     {
+    System.out.println(" My Child Thread");
+     }
+
+
+}
+-------------------------------------------------------
+package overriding;
+
+public class B
+{
+   public static void main(String arg[])
+   {
+  A r=new A();
+  Thread t1=new Thread(r);
+  t1.start();
+  for(int i=1;i<=5;i++)
+  {
+  System.out.println(" My main Thread");
+  }
+   }
+}
+
+output:
+
+ My main Thread
+ My main Thread
+ My main Thread
+ My main Thread
+ My main Thread
+ My Child Thread
